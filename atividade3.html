@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo da equação bhaskara</title>
+</head>
+<body>
+    <h1>Calculo de Bhaskara</h1>
+    <script>
+         let n1 = prompt('Digite um valor do produto:')
+         let n2 = prompt('Digite um valor do produto:')
+         let n3 = prompt('Digite um valor do produto:')
+
+         let d = n2 **2-4*parseFloat(n1)*parseFloat(n3)
+         let r = Math.sqrt(d)
+         let d3 = 2*parseFloat(n1)
+         
+         if (n2 < 0){
+         let c = Math.abs(n2)
+         let x1 = c-r
+         let x2 = c+r
+         let r1 = x1/d3
+         let r2 = x2/d3
+         document.write(`Os dois valores de bhaskara são ${r1} e ${r2}`)
+         }else{
+         let x1 = -parseFloat(n2)-r
+         let x2 = -parseFloat(n2)+r
+         let r1 = x1/d3
+         let r2 = x2/d3
+         document.write(`Os dois valores de bhaskara são ${r1} e ${r2}`)
+         }
+         
+    </script>
+</body>
+</html>
